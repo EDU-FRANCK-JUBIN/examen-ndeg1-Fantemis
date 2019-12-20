@@ -66,11 +66,7 @@ print("Merci J2")
 print(J2_list)
 
 # A l'aide d'une boucle while, faire courir les tortues en tirant un nombre entre 0 et 5 qui reprÃ©sente le nombre de pixels du dÃ©placement vers la droite
-michelangelo_speed = random.randint(1, 5)
-leonardo_speed = random.randint(1, 5)
-raphael_speed = random.randint(1, 5)
-splinter_speed = random.randint(1, 5)
-donatello_speed = random.randint(1, 5)
+
 
 course_lancee = True
 resultats_course = []
@@ -81,32 +77,32 @@ while course_lancee:
             resultats_course.append(1)
 
     else:
-        michelangelo.forward(michelangelo_speed)
+        michelangelo.forward(random.randint(1, 5))
 
     if (leonardo.position()[0] > 700):
         if(2 not in resultats_course):
             resultats_course.append(2)
 
     else:
-        leonardo.forward(leonardo_speed)
+        leonardo.forward(random.randint(1, 5))
 
     if (raphael.position()[0] > 700):
         if(3 not in resultats_course):
             resultats_course.append(3)
     else:
-        raphael.forward(raphael_speed)
+        raphael.forward(random.randint(1, 5))
 
     if (splinter.position()[0] > 700):
         if(4 not in resultats_course):
             resultats_course.append(4)
     else:
-        splinter.forward(splinter_speed)
+        splinter.forward(random.randint(1, 5))
 
     if (donatello.position()[0] > 700):
         if(5 not in resultats_course):
             resultats_course.append(5)
     else:
-        donatello.forward((donatello_speed))
+        donatello.forward(random.randint(1, 5))
 
     if(donatello.position()[0] > 700 and splinter.position()[0] > 700 and raphael.position()[0] > 700 and leonardo.position()[0] > 700 and michelangelo.position()[0] > 700):
         print("La course est terminée")
