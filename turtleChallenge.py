@@ -54,15 +54,13 @@ J2_list = []
 prediction_J1 = -1
 prediction_J2 = -1
 for i in range(1, 4):
-    while(prediction_J1 < 1 and prediction_J1 > 3)
-        prediction_J1 = input("J1, veuillez saisir votre prédiction pour la  %i eme place" % (i))
+    prediction_J1 = input("J1, veuillez saisir votre prédiction pour la  %i eme place" % (i))
     J1_list.append(prediction_J1)
 print("Merci J1")
 print(J1_list)
 
 for i in range(1, 4):
-    while(prediction_J2 < 1 and prediction_J2 > 3)
-        prediction_J2 = input("J2, veuillez saisir votre prédiction pour la %i eme place" % (i))
+    prediction_J2 = input("J2, veuillez saisir votre prédiction pour la %i eme place" % (i))
     J2_list.append(prediction_J2)
 print("Merci J2")
 print(J2_list)
@@ -111,7 +109,7 @@ print(resultats_list)
 # et afficher le rÃ©sultat de la course
 # et le joueur gagnant avec la tortue arbitre et l'instruction turtle.Write Ã  la position 0,0
 # A IMPLEMENTER
-
+# PAS EU LE TEMPS :/
 
 
 turtle_arbitre = turtle.Turtle()
